@@ -4,6 +4,7 @@ import { Container, CssBaseline, AppBar, Toolbar, Typography, Button } from '@mu
 import FeedbackForm from './components/FeedbackForm';
 import ProductCatalog from './components/ProductCatalog';
 import CRMDashboard from './components/Dashboard';
+import MyDataTable from './components/Table';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,9 @@ const App: React.FC = () => {
           <Button color="inherit" component={Link} to="/dashboard">
             Дашборд CRM
           </Button>
+          <Button color="inherit" component={Link} to="/table">
+            Таблица
+          </Button>
         </Toolbar>
       </AppBar>
       <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
@@ -30,6 +34,7 @@ const App: React.FC = () => {
           <Route path="/" element={<FeedbackForm />} />
           <Route path="/catalog" element={<ProductCatalog />} />
           <Route path="/dashboard" element={<CRMDashboard />} />
+          <Route path="/table" element={<MyDataTable />} />
         </Routes>
       </Container>
     </Router>

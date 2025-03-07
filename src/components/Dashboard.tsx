@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Paper, Grid, Button, ButtonGroup } from '@mui/material';
+import { Box, Typography, Paper, Grid } from '@mui/material';
 
 const CRMDashboard: React.FC = () => {
   return (
@@ -27,16 +27,6 @@ const CRMDashboard: React.FC = () => {
           </Paper>
         </Grid>
       </Grid>
-      <ButtonGroup variant="outlined" aria-label="Basic button group">
-        <Button>One</Button>
-        <Button>Two</Button>
-        <Button>Three</Button>
-      </ButtonGroup>
-      <ButtonGroup variant="text" aria-label="Basic button group">
-        <Button>One</Button>
-        <Button>Two</Button>
-        <Button>Three</Button>
-      </ButtonGroup>
     </Box>
   );
 };
