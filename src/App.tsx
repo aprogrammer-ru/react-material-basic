@@ -16,24 +16,24 @@ const App: React.FC = () => {
             Мое приложение
           </Typography>
           <Button color="inherit" component={Link} to="/">
-            Обратная связь
+            Дашборд CRM
           </Button>
           <Button color="inherit" component={Link} to="/catalog">
             Каталог товаров
           </Button>
-          <Button color="inherit" component={Link} to="/dashboard">
-            Дашборд CRM
-          </Button>
           <Button color="inherit" component={Link} to="/table">
             Таблица
+          </Button>
+          <Button color="inherit" component={Link} to="/dashboard">
+            Обратная связь
           </Button>
         </Toolbar>
       </AppBar>
       <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
         <Routes>
-          <Route path="/" element={<FeedbackForm />} />
+          <Route path="/" element={<CRMDashboard />} />
           <Route path="/catalog" element={<ProductCatalog />} />
-          <Route path="/dashboard" element={<CRMDashboard />} />
+          <Route path="/dashboard" element={<FeedbackForm />} />
           <Route path="/table" element={<MyDataTable />} />
         </Routes>
       </Container>
